@@ -5,4 +5,4 @@ RUN apt-get update -y && \
 COPY . /src
 RUN cd /src; npm install
 EXPOSE 3000
-CMD ["DEBUG=express:* & nodejs", "/src/app.js"]
+CMD ["nodejs", "/src/app.js"]
