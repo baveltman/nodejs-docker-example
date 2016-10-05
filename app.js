@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', function (req, res) {
+  console.log('Recieved index request');
   res.send(index.html);
 });
 
