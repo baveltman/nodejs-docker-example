@@ -14,6 +14,11 @@ app.get('/', function (req, res) {
   res.send(index.html);
 });
 
+app.get('/test', function(req, res){
+  console.log("Recieved request to test");
+  res.send("test");
+});
+
 app.listen(port, function(){
   console.log('Magic is happening on port ' + port + '.');
 })
