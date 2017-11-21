@@ -21,5 +21,5 @@ app.get('/test', function(req, res){
 
 app.listen(port, function(){
   console.log('Magic is happening on port ' + port + '.');
-  console.log('Come see it!');
+  console.log('Come see it!!!');
 })
